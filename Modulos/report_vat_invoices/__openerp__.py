@@ -34,9 +34,10 @@ Account.invoice adds a menu to print the report or VAT , for a quick look , you 
     """,
     'author': 'Alan Gon',
     'website': 'https://www.facebook.com/alanxls.gon',
-    'depends': ['account_invoice'],
+    'depends': ['account'],
     'data': [
-        'wizard/report_vat_wizard.xml',        
+        'views/invoice_report_vat.xml',    
+    
     ],
     'installable': True,
     'auto_install': True,
