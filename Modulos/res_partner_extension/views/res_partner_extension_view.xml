@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<openerp>
+    <data>
+	        <record model="ir.ui.view" id="crm_case_claims_location_form_form">
+		        <field name="name">res.partner_extension.form</field>
+		        <field name="model">res.partner</field>
+			    <field name="inherit_id" ref="base.view_partner_form" />
+		        <field name="arch" type="xml">
+			  	<xpath expr="//field[@name='active']" position="after">
+		          <field name="notification_client" string="Aceptar notificaciones"/>
+		        </xpath>
+			    </field>
+	        </record>
+        	
+            </data>
+</openerp>
